@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.css">
+    <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Pastelería - Delicias de la abuela</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <a class="navbar-brand" href="index.html">
+            <img  class="logoBarra" src="./assets/img/logo.png" alt=" logo" >
+          </a>
+          <li class="nav-item active">
+            <a class="nav-link" href="pastelero.html">Administración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="adminPedidos.html">Pedidos</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contenedor col-lg-12">
+        <div class="titulo-principal text-left mb-4">
+          <h1>Pedidos de los clientes</h1>
+          <div class="single_line"></div>
+          <p>En este apartado se muestran los pedidos de los clientes.</p>
+          </div>
+          <div class="row col-md-12 col-md-offset-2 custyle">
+            <table class="table table-striped custab">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nombre del cliente</th>
+                    <th>Pedido</th>
+                    <th>Cobro</th>
+                    <th>Dirección de envío</th>
+                    <th>Estado actual</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Fernando Gutiérrez</td>
+                        <td>CheeseCake</td>
+                        <td>$200</td>
+                        <td>Calle #45 Av. Zarigueya</td>
+                        <td>01010101</td>
+                        <td>elcorreo@correo.com</td>
+                        <td>Completado <i class="fa-solid fa-check"></i></td>
+                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="fa fa-edit"></span> </a> <a href="#" class="btn btn-danger btn-xs"><span class="fa-solid fa-xmark"></span> </a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mariana Ortega</td>
+                        <td>Personalizado: Fresa, Frutas, Pastel en forma de corazón</td>
+                        <td>$250</td>
+                        <td>Calle Hidalgo #4</td>
+                        <td>01010505</td>
+                        <td>micorreo@correo.com</td>
+                        <td>En proceso <i class="fa-solid fa-clock"></i> </td>
+                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="fa fa-edit"></span> </a> <a href="#" class="btn btn-danger btn-xs"><span class="fa-solid fa-xmark"></span></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Juan Escutia</td>
+                        <td>Pastel personal</td>
+                        <td>$90</td>
+                        <td>Prolong. Fernando #98</td>
+                        <td>45454545</td>
+                        <td>pastel_correo@correo.com</td>
+                        <td>Cancelado <i class="fa-solid fa-ban"></i> </td>
+                        <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="fa fa-edit"></span> </a> <a href="#" class="btn btn-danger btn-xs"><span class="fa-solid fa-xmark"></span> </a></td>
+                    </tr>
+            </table>
+            </div>
+      </div>
+
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Acerca</h6>
+            <p class="text-justify">Página para LaunchX.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Menú</h6>
+            <ul class="footer-links">
+              <li><a href="pastelero.html">Administración</a></li>
+              <li><a href="adminPedidos.html">Pedidos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Horarios</h6>
+            <ul class="footer-links">
+              <li>De Lunes a Viernes</li>
+              <li>de 9:00 a.m. a 18:00 p.m.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text"><b>Ubícanos en</b>: Dirección Feliz #45 CP.91910. <b>Teléfono de contacto</b>: 55-00-11-22</p>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>
+</html>
