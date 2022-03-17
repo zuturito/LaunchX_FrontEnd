@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+#pokefondo{
+    background-image: url(../img/pokedex.png);
+    width: 855px;
+    height: 635px;
+    margin: auto;
+    position: relative;
+}
+#pokename{
+    margin-top: 76%;
+    position: absolute;
+    width: 97%;
+    font-family: 'Press Start 2P', cursive;
+}
+#pokeImg{
+    float: right;
+    /*margin-right: 330px;
+    margin-top: 47px;*/
+    margin-right: 65px;
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+}
+#datos_general{
+    margin-top: 5%;
+    float: left;
+    margin-left: 20px;
+    font-family: 'Press Start 2P', cursive;
+    display: none;
+}
+#movimientos tbody{
+    font-size: 12px;
+}
+th{
+    margin-left:15px;
+}
+#notfoundpkm{
+    margin-top: 16%;
+    float: left;
+    margin-left: 55px;
+    font-family: 'Press Start 2P', cursive;
+    display: none;
+}
+  /*tipos*/
+  .grass{
+    background: #74c137;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .bug{
+    background: #bcc95d;
+    color:#fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .dark{
+    background: #362f27;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .dragon{
+    background: #7561dc;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .electric{
+    background: #f5bb40;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .fairy{
+    background: #d599d5;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .fighting{
+    background: #7f3920;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .fire{
+    background: #de361b;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .flying{
+    background: #a9acfd;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .ghost{
+    background: #4c4c70;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .ground{
+    background: #ceab47;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .ice{
+    background: #72cff1;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .normal{
+    background: #c5c1b5;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .poison{
+    background: #914794;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .psychic{
+    background: #c43664;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .rock{
+    background: #8d783f;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .steel{
+    background: #b6b5c3;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  .water{
+    background: #3694eb;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  /*Pokedex*/
+  #pokedextop1 {
+      width: 500px;
+      height: 300px;
+      float: left;
+      margin-left: 450px;
+      position: absolute;
+      background-color: #c00d0d;
+      border-top-right-radius: 5%;
+      border-bottom-right-radius: 5%;
+  }
+  #pokdextop1blackpanel {
+    width: 400px;
+    height: 250px;
+    float: left;
+    margin-top: 22px;
+    margin-left: 500px;
+    position: absolute;
+    background-color: #404040;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+  }
+  #pokepantalla {
+    width: 330px;
+    height: 275px;
+    float: left;
+    margin-top: -10px;
+    margin-left: 37px;
+    position: absolute;
+    background-color: #376092;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-style: solid;
+    border-color: #ccc;
+  }
+  #miniDot1{
+		width: 20px;
+		height: 20px;
+		margin-right: -330px;
+    margin-top: 120px;
+		float: right;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-o-border-radius: 20px;
+		background: radial-gradient(#001626, #000);
+		background: -webkit-radial-gradient(#001626, #000);
+		background: -moz-radial-gradient(#001626, #000);
+		background: -o-radial-gradient(#001626, #000);
+	}
+  #poketop1eft{
+    width: 120px;
+    height: 250px;
+    float: left;
+    margin-top: 22px;
+    margin-left: 375px;
+    position: absolute;
+    background-color: #c00d0d;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+  #miniDot2{
+		width: 20px;
+		height: 20px;
+		margin-left: 20px;
+    margin-top: 110px;
+		float: left;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-o-border-radius: 20px;
+		background: radial-gradient(#001626, #000);
+		background: -webkit-radial-gradient(#001626, #000);
+		background: -moz-radial-gradient(#001626, #000);
+		background: -o-radial-gradient(#001626, #000);
+	}
+  #miniDot3{
+		width: 20px;
+		height: 20px;
+		margin-left: 40px;
+    margin-top: 110px;
+		float: left;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-o-border-radius: 20px;
+		background: radial-gradient(#001626, #000);
+		background: -webkit-radial-gradient(#001626, #000);
+		background: -moz-radial-gradient(#001626, #000);
+		background: -o-radial-gradient(#001626, #000);
+	}
+  #miniDot4{
+		width: 20px;
+		height: 20px;
+		margin-left: 49px;
+    margin-top: -60px;
+		float: left;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-o-border-radius: 20px;
+		background: radial-gradient(#001626, #000);
+		background: -webkit-radial-gradient(#001626, #000);
+		background: -moz-radial-gradient(#001626, #000);
+		background: -o-radial-gradient(#001626, #000);
+	}
+  #miniDot5{
+		width: 20px;
+		height: 20px;
+		margin-left: 49px;
+    margin-top: 20px;
+		float: left;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-o-border-radius: 20px;
+		background: radial-gradient(#001626, #000);
+		background: -webkit-radial-gradient(#001626, #000);
+		background: -moz-radial-gradient(#001626, #000);
+		background: -o-radial-gradient(#001626, #000);
+	}
+  #junction
+	{
+		width: 500px;
+		height: 35px;
+		float: left;
+    margin-top: 300px;
+    margin-left: 450px;
+    position: absolute;
+		background: linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);	
+		background: -webkit-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+		background: -moz-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+		background: -o-linear-gradient(left, #8b0000 0%, #c00d0d 50%, #8b0000 100%);
+	}
+	#junction1
+	{
+		height: 20px;
+    width: 10px;
+		background-color: #000;
+		margin-top: 7px;
+    margin-left: 240px;
+	}
+  #pokedexbottom1 {
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin-left: 437px;
+    margin-top: 335px;
+    position: absolute;
+    background-color: #c00d0d;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-left: 15px solid #8e0101;
+  }
+  #pokedexbottomblack1 {
+    width: 500px;
+    height: 295px;
+    float: left;
+    margin-left: 255px;
+    margin-top: 335px;
+    position: absolute;
+    background-color: #474747;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border: solid 2px;
+    border-color: #000;
+  }
+  #focoled{
+    width: 20px;
+    height: 15px;
+    margin-top: 145px;
+    position: absolute;
+    background-color: #8eb441;
+    float: left;
+  }
+  #panelpad{
+    width: 230px;
+    height: 220px;
+    float: left;
+    margin-left: -143px;
+    margin-top: 40px;
+    position: absolute;
+    background-color: #474747;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border: solid 2px;
+    border-color: #000;
+  }
+  #circlepad{
+    background-color: none;
+    padding: 70px;
+    border: solid 2px #000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 45px;
+    border-radius: 50%;
+  }
+  #cross
+	{
+		width: 90px;
+		height: 90px;
+		position: absolute;
+    margin-top: -47px;
+    margin-left: -42px;
+	}
+  #pokedatospantalla{
+    width: 330px;
+    height: 275px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 90px;
+    position: absolute;
+    background-color: #fcd5b5;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-style: solid;
+    border-color: #ccc;
+  }
+	#topcross
+	{
+		width: 30px;
+		height: 30px;
+		background-color: #222;
+		position: absolute;
+		top: 0;
+		left: 30px;
+		box-shadow: -3px 2px #010101;
+		-webkit-box-shadow: -3px 2px #010101;
+		-moz-box-shadow: -3px 2px #010101;
+		-o-box-shadow: -3px 2px #010101;
+		border-top-left-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+		-moz-border-top-left-radius: 5px;
+		-o-border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-top-right-radius: 5px;
+		-o-border-top-right-radius: 5px;
+	}
+
+	#leftcross
+	{
+		width: 30px;
+		height: 30px;
+		background-color: #222;
+		z-index: 1;
+		position: absolute;
+		left: 0;
+		top: 30px;
+		box-shadow: -3px 2px #010101;
+		-webkit-box-shadow: -3px 2px #010101;
+		-moz-box-shadow: -3px 2px #010101;
+		-o-box-shadow: -3px 2px #010101;
+		border-top-left-radius: 5px;
+		-webkit-border-top-left-radius: 5px;
+		-moz-border-top-left-radius: 5px;
+		-o-border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-bottom-left-radius: 5px;
+		-o-border-bottom-left-radius: 5px;
+	}
+
+	#midcross
+	{
+		width: 30px;
+		height: 30px;
+		background-color: #222;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		box-shadow: -3px 2px #010101;
+		-webkit-box-shadow: -3px 2px #010101;
+		-moz-box-shadow: -3px 2px #010101;
+		-o-box-shadow: -3px 2px #010101;
+	}
+
+	#rightcross
+	{
+		width: 30px;
+		height: 30px;
+		background-color: #222;
+		position: absolute;
+		top: 30px;
+		right: 0;
+		box-shadow: -3px 2px #010101;
+		-webkit-box-shadow: -3px 2px #010101;
+		-moz-box-shadow: -3px 2px #010101;
+		-o-box-shadow: -3px 2px #010101;
+		border-top-right-radius: 5px;
+		-webkit-border-top-right-radius: 5px;
+		-moz-border-top-right-radius: 5px;
+		-o-border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-bottom-right-radius: 5px;
+		-o-border-bottom-right-radius: 5px;
+	}
+
+	#botcross
+	{
+		width: 30px;
+		height: 30px;
+		background-color: #222;
+		position: absolute;
+		bottom: 0;
+		left: 30px;
+		box-shadow: -3px 2px #010101;
+		-webkit-box-shadow: -3px 2px #010101;
+		-moz-box-shadow: -3px 2px #010101;
+		-o-box-shadow: -3px 2px #010101;
+		border-bottom-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-bottom-left-radius: 5px;
+		-o-border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-bottom-right-radius: 5px;
+		-o-border-bottom-right-radius: 5px;
+	}
+  #panelright{
+    width: 160px;
+    height: 190px;
+    float: right;
+    margin-left: 500px;
+    margin-top: 50px;
+    position: absolute;
+    background-color: #474747;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border: solid 2px;
+    border-color: #000;
+  }
+  #circlepad2{
+    background-color: #bebebe;
+    padding: 60px;
+    border: solid 2px #000;
+    text-align: center;
+    text-decoration: none;
+    float:left;
+    font-size: 16px;
+    margin-top: 32px;
+    margin-left: 15px;
+    border-radius: 50%;
+  }
+  #circlepad3{
+    background-color: #bebebe;
+    padding: 50px;
+    border: solid 2px #000;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    font-size: 16px;
+    margin-top: -114px;
+    margin-left: 24px;
+    border-radius: 50%;
+  }
+  .button {
+    height: 85px;
+    width: 85px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    background: rgb(49,222,61);
+    background: -moz-radial-gradient(circle, rgba(49,222,61,1) 0%, rgba(30,181,119,1) 35%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(49,222,61,1) 0%, rgba(30,181,119,1) 35%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(49,222,61,1) 0%, rgba(30,181,119,1) 35%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#31de3d",endColorstr="#000000",GradientType=1); 
+    border-radius: 50%;
+    margin-left: -65%;
+    position: absolute;
+    margin-top: 32%;
+    float:left;
+    border: solid 5px #000;
+    padding-top: 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+#miniDot6{
+  width: 10px;
+  height: 10px;
+  margin-left: 112px;
+  margin-top: -98px;
+  float: left;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  background: radial-gradient(#001626, #000);
+  background: -webkit-radial-gradient(#001626, #000);
+  background: -moz-radial-gradient(#001626, #000);
+  background: -o-radial-gradient(#001626, #000);
+}

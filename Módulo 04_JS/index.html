@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stylesheet.css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/8bit-wonder" type="text/css"/> 
+    <title>Pokedex LaunchX</title>
+</head>
+<body>
+    <div id="pokedextop1"></div>
+    <div id="pokdextop1blackpanel">
+        <div id="pokepantalla">
+            <img id="pokeImg"><div id="miniDot1"></div>
+            <input id="pokename" name="pokename" type="text" placeholder="Nombre o número de PKM">
+        </div>
+    </div>
+    <div id="poketop1eft">
+        <div id="miniDot2"></div>
+        <div id="miniDot3"></div>
+        <div id="miniDot4"></div>
+        <div id="miniDot5"></div>
+    </div>
+    <div id="junction">
+        <div id="junction1"></div>
+    </div>
+    <div id="pokedexbottomblack1"><div id="focoled"></div></div>
+    <div id="pokedexbottom1">
+        <div id="panelpad">
+            <div id="circlepad">
+                <div id="cross">
+                    <div id="leftcross">
+                    <div id="leftT"></div>
+                    </div>
+                    <div id="topcross">
+                    <div id="upT"></div>
+                    </div>
+                    <div id="rightcross">
+                    <div id="rightT"></div>
+                    </div>
+                    <div id="midcross">
+                    <div id="midCircle"></div>
+                    </div>
+                    <div id="botcross">
+                    <div id="downT"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pokedatospantalla">
+            <div id="datos_general">
+                <label id="pokenum"># </label><label id="pokeNombreRes"></label><br> <label>HT </label><label id="height"></label> <label>WT </label><label id="weight"></label><label> lbs.</label><br>
+                <label>Type:</label><label id="type1"></label><br><br>
+                <label>Stats:</label><br>
+                <table id="estadisticas">
+                    <tr>
+                        <th>HP <label id="hpvalue"> </label></th>
+                        <th>SP ATK <label id="spatkvalue"> </label></th>
+                    </tr>
+                    <tr>
+                        <th>ATK <label id="atkvalue"> </label></th>
+                        <th>SP DEF <label id="spdefvalue"> </label></th>
+                    </tr>
+                    <tr>
+                        <th>DEF <label id="defvalue"> </label></th>
+                        <th>SPEED <label id="speedvalue"> </label></th>
+                    </tr>
+                </table><br>
+                <label>Moveset:</label><br>
+                <table id="movimientos">
+                    <tr>
+                        <th><label id="move1"></label></th>
+                        <th><label id="move2"></label></th>
+                    </tr>
+                    <tr>
+                        <th><label id="move3"></label></th>
+                        <th><label id="move4"></label></th>
+                    </tr>
+                </table>
+            </div>
+            <div id="notfoundpkm">
+                <h5>Pokemon not found</h5>
+            </div>
+        </div>
+        <div id="panelright">
+            <div id="circlepad2"></div>
+            <div id="circlepad3"></div>
+            <div id="miniDot6"></div>
+            <button class="button" onclick="fetchPokemon()">Busca PKM</button>
+        </div>
+    </div>
+    <script src="./assets/js/poke.js"></script>
+</body>
+</html>
